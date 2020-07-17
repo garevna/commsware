@@ -19,9 +19,9 @@
       <span style="cursor: pointer" @click="call">{{ phone }}</span>
     </v-app-bar>
 
-    <v-content>
+    <v-main>
       <Home />
-    </v-content>
+    </v-main>
     <v-bottom-navigation style="height: fit-content!important">
       <Footer />
     </v-bottom-navigation>

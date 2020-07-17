@@ -10,7 +10,12 @@ export default new Vuetify({
       expand: 'mdi-chevron-down',
       valid: 'mdi-check-bold',
       invalid: 'mdi-alert-outline',
-      home: 'mdi-home-circle'
+      home: 'mdi-home-circle',
+      pdf: 'mdi-file-pdf',
+      email: 'mdi-at',
+      mail: 'mdi-email',
+      phone: 'mdi-phone',
+      address: 'mdi-map-marker'
     }
   },
   theme: {

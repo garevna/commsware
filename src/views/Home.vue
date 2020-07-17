@@ -31,21 +31,37 @@
       </v-col>
     </v-row>
     <v-row justify="center" class="text-center">
-      <!-- <v-col cols="12" class="mb-4 mx-auto"> -->
-        <PriceCard />
-      <!-- </v-col> -->
+      <PriceCard />
+    </v-row>
+
+    <v-row align="center" justify="center" class="mt-12">
+      <p>Download the contract, sign and send it to our mail <a :href="mail">{{ email }}</a></p>
+    </v-row>
+    <v-row align="center" justify="center" class="mb-12">
+      <a :href="pdf" download target="_blank" style="text-decoration: none">
+        <v-btn large dark class="secondary">
+          <v-icon large>$pdf</v-icon>
+        </v-btn>
+      </a>
     </v-row>
   </v-container>
 </template>
 
 <script>
 
+import { mapState } from 'vuex'
 import PriceCard from '@/components/PriceCard.vue'
 
 export default {
   name: 'Home',
   components: {
     PriceCard
+  },
+  computed: {
+    ...mapState(['pdf', 'email']),
+    mail () {
+      return `mailto: ${this.email}`
+    }
   }
 }
 </script>

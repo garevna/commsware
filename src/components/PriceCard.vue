@@ -3,7 +3,7 @@
         class="price-card"
         transition="slide-x-transition"
     >
-      <figure style="position: absolute; bottom: -8px; right: 0; z-index: 0">
+      <!-- <figure style="position: absolute; bottom: -8px; right: 0; z-index: 0">
         <svg width="173" height="158" viewBox="0 0 173 158" fill="none">
           <g style="mix-blend-mode: multiply;">
             <path d="M173 3.05176e-05C77.4548 2.21647e-05 7.62439e-06 70.7 0 157.913L163 157.913C168.523 157.913 173 153.436 173 147.913L173 3.05176e-05Z" fill="url(#paint0_linear)">
@@ -21,7 +21,7 @@
             </linearGradient>
           </defs>
         </svg>
-      </figure>
+      </figure> -->
       <v-card-text class="mt-2 mt-sm-0" align="center" style="position: relative; z-index: 1">
         <h1 class="price">
           <sup>$</sup>{{ price }}<span class="mo">/mo</span>
