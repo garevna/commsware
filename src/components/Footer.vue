@@ -16,6 +16,7 @@
       <v-col cols="12" sm="5">
         <v-card flat class="transparent mx-auto" max-width="400">
           <p class="left-14">{{ address }}</p>
+          <p class="left-14">{{ email }}
           <p class="left-14" @click="call" style="cursor: pointer">
             <span width="10" height="10" class="mr-2" style="display: inline-block;">
               <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
@@ -66,7 +67,7 @@ export default {
   }),
 
   computed: {
-    ...mapState(['phone', 'address', 'abn'])
+    ...mapState(['phone', 'address', 'abn', 'email'])
   },
   methods: {
     call () {
