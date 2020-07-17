@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/commsware/precache-manifest.3c9958ea9fc96d70058d81808a5f2752.js"
+  "/commsware/precache-manifest.d6d06c8d1d2c3a801e907833d635900a.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "commsware"});
