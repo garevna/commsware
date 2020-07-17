@@ -1,32 +1,60 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
-  </div>
+  <v-app>
+    <v-app-bar
+      app
+      color="primary"
+      dark
+    >
+      <v-spacer></v-spacer>
+      <v-avatar tile color="transparent">
+        <v-img
+          alt="phone"
+          width="20"
+          height="20"
+          contain
+          src="@/assets/icons/phone.svg"
+          style="vertical-align: middle"
+        />
+      </v-avatar>
+      <span style="cursor: pointer" @click="call">{{ phone }}</span>
+    </v-app-bar>
+
+    <v-content>
+      <Home />
+    </v-content>
+    <v-bottom-navigation style="height: fit-content!important">
+      <Footer />
+    </v-bottom-navigation>
+  </v-app>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<script>
 
-#nav {
-  padding: 30px;
+import 'commsware-styles'
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
+import Home from './views/Home.vue'
+import Footer from '@/components/Footer.vue'
 
-    &.router-link-exact-active {
-      color: #42b983;
+import { mapState } from 'vuex'
+
+export default {
+  name: 'App',
+
+  components: {
+    Home,
+    Footer
+  },
+
+  data: () => ({
+    //
+  }),
+  computed: {
+    ...mapState(['phone', 'address', 'abn'])
+  },
+  methods: {
+    call () {
+      window.open(`tel:${this.officePhone}`)
     }
   }
 }
-</style>
+</script>
