@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b18f0a04f0b79defafa5",
-    "url": "/commsware/css/app.09a1abc5.css"
+    "revision": "4d3c6d059212e2a03ddb",
+    "url": "/commsware/css/app.709b33f2.css"
   },
   {
-    "revision": "58252139ef2faf032a11",
-    "url": "/commsware/css/chunk-vendors.ae7a5099.css"
+    "revision": "f27cd05d61ec7857e3b2",
+    "url": "/commsware/css/chunk-vendors.cc4baa6f.css"
   },
   {
     "revision": "e991dea9f65ce799dd72095ab7ad6e88",
@@ -52,16 +52,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/commsware/img/phone.f6fb9de0.svg"
   },
   {
-    "revision": "85de2ba41593b879c559fc53c8d51b23",
+    "revision": "60d3a22e7eae5fbdc813654e702d6916",
     "url": "/commsware/index.html"
   },
   {
-    "revision": "b18f0a04f0b79defafa5",
-    "url": "/commsware/js/app.015b3e09.js"
+    "revision": "4d3c6d059212e2a03ddb",
+    "url": "/commsware/js/app.a2b2a8c4.js"
   },
   {
-    "revision": "58252139ef2faf032a11",
-    "url": "/commsware/js/chunk-vendors.95d14fa0.js"
+    "revision": "f27cd05d61ec7857e3b2",
+    "url": "/commsware/js/chunk-vendors.0b8742b2.js"
   },
   {
     "revision": "6a0346cb8dcc1e7993030a2a66b18432",
